@@ -1,0 +1,48 @@
+:root {
+  --primary: #577590;
+  --secondary: #43aa8b;
+  --complementary: #907257;
+  --shade_20: #465e73;
+  --shade_40: #344656;
+  --tint_20: #7991a6;
+  --tint_40: #9aacbc;
+  --txt_white: whitesmoke;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#contenedor {
+  background-color: var(--txt_white);
+  height: 100vh;
+}
+
+header {
+  background-color: var(--secondary);
+  height: 7rem;
+}
+
+#logo {
+  background-color: var(--shade_20);
+}
+
+#botonera {
+  background-color: var(--shade_40);
+}
+
+main {
+  background-color: var(--tint_20);
+  height: 85vh;
+}
+
+#titulo {
+  font-size: 4rem;
+  color: var(--txt_white);
+}
+
+#slider_banner {
+  background-color: var(--bs-blue);
+  height: 20rem;
+}
+#productos {
+}
