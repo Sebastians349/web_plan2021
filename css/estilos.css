@@ -7,6 +7,27 @@
   --tint_20: #7991a6;
   --tint_40: #9aacbc;
   --txt_white: whitesmoke;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
 }
 
 html {
@@ -14,12 +35,10 @@ html {
 }
 #contenedor {
   background-color: var(--txt_white);
-  height: 100vh;
 }
 
 header {
   background-color: var(--secondary);
-  height: 7rem;
 }
 
 #logo {
@@ -30,9 +49,10 @@ header {
   background-color: var(--shade_40);
 }
 
-main {
-  background-color: var(--tint_20);
-  height: 85vh;
+.bg-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #titulo {
@@ -41,8 +61,7 @@ main {
 }
 
 #slider_banner {
-  background-color: var(--bs-blue);
-  height: 20rem;
+  background-color: var(--bs-yellow);
 }
 #productos {
 }
