@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Plan! Organizadores magnéticos</title>
 </head>
 
-<body class="">
+<body>
     <div class="container-fluid" id="contenedor">
        
-      <header class="row shadow-lg p-3 bg-body rounded" id="cabecera">
-        <nav class="navbar navbar-expand-md navbar-light w-100 nav-justified">
+  <!-- <header class="row shadow-lg p-3 bg-body rounded">
+        <nav class="navbar navbar-expand-md navbar-light w-75 nav-justified">
             <h1>
               <a class="navbar-brand" href="index.html"> 
                   <img src="images/logotransOK.png" width="205" height="50"
@@ -26,27 +28,61 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
               
-            <div class="collapse navbar-collapse" id="botonera">
+            <div class="collapse navbar-collapse mr-auto " id="botonera">
+              
               <ul class="nav nav-pills w-100 text-uppercase">
                 <li class="nav-item">
-                <a class="nav-link active border border-primary w-75" href="#principal">Inicio</a>
+                <a class="nav-link active border border-primary w-75" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-dark w-75" href="#menu">Productos</a>
+                <a class="nav-link text-dark w-75" href="#productos">Productos</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-dark w-75" href="#contacto">Nosotros</a>
+                <a class="nav-link text-dark w-75" href="#nosotros">Nosotros</a>
                 </li>
                 <li class="nav-item" id="prueba">
-                  <a class="nav-link text-dark w-75"  href="#pie">contacto</a>
+                  <a class="nav-link text-dark w-75"  href="#footer">contacto</a>
                   </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
+                   <!-- prueba navbar dual collapse -->
+
+          <header class="row shadow-lg p-3 bg-body rounded">
+                   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="botonera">
+                    <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+                        <ul class="navbar-nav ml-auto text-center nav-pills">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">productos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+                        <a class="mx-auto" href="#">
+                            <img src="images/logo-pistacho-800.png" width="70" height="70" class="rounded-circle mr-4 ml-4">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+                        <ul class="navbar-nav mr-auto text-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark text-decoration-none href="#">nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark text-decoration-none" href="#">contacto</a>
+                            </li>
+                          </ul>
+                    </div>
+                </nav>
       </header>
 
-    <section class="row mt-4" id="principal">
-      <div id="carouselExampleFade" class="col-md-6 carousel slide carousel-fade rounded" data-ride="carousel">
+    <section class="row mt-4 shadow-lg p-3 bg-body rounded" id="principal">
+      <div id="carouselExampleFade" class="col-md-8 carousel slide carousel-fade rounded" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/banner0.png" class="d-block w-100" alt="...">
@@ -75,19 +111,19 @@
       </div>
 
 
-            <div class="col-md-6 text-uppercase">
-              <h1 class="display-4 fw-bold text-dark">Organizadores <br> y Planners <br>
+            <div class="col-md-4 text-uppercase">
+              <h1 class="display-4 fw-lighter text-dark">Organizadores <br> y Planners <br>
               Magnéticos       
               
               </h1>
               <p class="lead">Organizá tu día, organizá tu PLAN!</p>
               <hr class="my-4">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-              <a class="btn btn-primary btn-lg" href="#" role="button">sHOP ONLINE</a>
+              
+              <a class="btn btn-secondary btn-lg " href="#" role="button">sHOP ONLINE</a>
             </div>
       </section>
-       
-        
+      
+     
        
     <section class="row align-items-center justify-content-around mt-4 mb-4 " id="productos">
         
@@ -171,7 +207,7 @@
     </section>
     
 
-   <footer class="row justify-content-around shadow-lg p-3 mb-5 bg-body rounded" id="pie" >
+   <footer class="row justify-content-around shadow-lg p-3 mb-5 bg-body rounded" id="footer" >
             <div class="card col-md-4 sm mb-4 id="pie_1"> 
                 <div class="h5 text-center mt-4 mb-4">¿Querés recibir todas nuestras novedades? <br>(trancu, no nos gusta el Spam)</strong></div>
                     <form class="form" role="form">
@@ -185,7 +221,7 @@
                         <input type="password" class="form-control" id="" 
                                placeholder="Acá va tu nombre">
                       </div>
-                        <button type="submit" class="btn btn-info mb-3">Vamos!</button>
+                        <button type="submit" class="btn btn-secondary mb-3">Vamos!</button>
                                       
                     </form>
             </div>     

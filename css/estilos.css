@@ -1,6 +1,7 @@
 :root {
   --primary: #577590;
   --secondary: #43aa8b;
+  --pistacho: #90be6d;
   --complementary: #907257;
   --shade_20: #465e73;
   --shade_40: #344656;
@@ -34,13 +35,24 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
+#botonera {
+  font-size: 1.5rem;
+}
+
+#botonera a:hover {
+  background-color: var(--pistacho);
+  border-radius: 3px;
+}
+
 /* .jumbotron {
   background-image: url("../images/ramlight.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-#slider_banner {
-  background-color: var(--bs-yellow);
-}
+
  */
