@@ -33,35 +33,14 @@
 html {
   scroll-behavior: smooth;
 }
-#contenedor {
-  background-color: var(--txt_white);
-}
 
-header {
-  background-color: var(--secondary);
-}
-
-#logo {
-  background-color: var(--shade_20);
-}
-
-#botonera {
-  background-color: var(--shade_40);
-}
-
-.bg-image {
+/* .jumbotron {
+  background-image: url("../images/ramlight.png");
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
-
-#titulo {
-  font-size: 4rem;
-  color: var(--txt_white);
-}
-
 #slider_banner {
   background-color: var(--bs-yellow);
 }
-#productos {
-}
+ */
