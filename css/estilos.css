@@ -36,11 +36,18 @@ html {
 }
 
 body {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Lato", cursive;
+  /*   letter-spacing: 0.2rem;
+ */
 }
 
 #botonera {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.noHover {
+  pointer-events: none;
 }
 
 #botonera a:hover {
