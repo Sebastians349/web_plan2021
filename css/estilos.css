@@ -62,11 +62,19 @@ body {
     0.7s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
 }
 
-.card-image-top {
+#principal {
+  margin-top: 5rem;
+}
+
+#productos {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+/* .card-image-top {
   width: 100%;
   height: 15vw;
   object-fit: cover;
-}
+} */
 
 #txt_dev {
   font-size: smaller;
