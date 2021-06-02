@@ -56,10 +56,7 @@ body {
 }
 .hover_agranda:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
-  transition: 0.7s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-    0.7s box-shadow,
-    0.7s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  transition: 0.3s ease-in-out;
 }
 
 #principal {
@@ -69,6 +66,9 @@ body {
 #productos {
   margin-top: 6rem;
   margin-bottom: 5rem;
+}
+.card {
+  box-shadow: 0 4px 2px -2px gray;
 }
 /* .card-image-top {
   width: 100%;
