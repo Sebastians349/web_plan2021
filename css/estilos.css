@@ -37,8 +37,6 @@ html {
 
 body {
   font-family: "Lato", cursive;
-  /*   letter-spacing: 0.2rem;
- */
 }
 
 #botonera {
@@ -63,12 +61,21 @@ body {
   margin-top: 5rem;
 }
 
+.titulo,
+.lead {
+  letter-spacing: -0.08em;
+}
+
+h5 {
+  letter-spacing: -0.02em;
+}
+
 #productos {
   margin-top: 6rem;
   margin-bottom: 5rem;
 }
 .card {
-  box-shadow: 0 4px 2px -2px gray;
+  box-shadow: 0 3px 2px -2px gray;
 }
 /* .card-image-top {
   width: 100%;
@@ -79,3 +86,19 @@ body {
 #txt_dev {
   font-size: smaller;
 }
+
+/* /////////////// 4.6 BREAKPOINTS /////////////////
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
