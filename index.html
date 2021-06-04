@@ -773,22 +773,35 @@
 
    <footer class="row justify-content-around shadow-lg p-3 bg-body rounded" id="footer" >
            
-            <div class="card col-md-4 sm mb-4" style="width: 25rem;" id="pie_1"> 
-                <div class="h5 text-center mt-4 mb-4 ">¿Querés recibir todas nuestras novedades? <br>(tranca, no nos gusta el Spam)</strong></div>
-                    <form class="form" method="POST" role="form" data-netlify="true">
+            <div class="card col-md-4 mb-4 align-items-center justify-content-center" style="width: 25rem;" id="pie_1"> 
+                <div class="h5 text-center mt-4 mb-4 ml-4 mr-4">¿Querés recibir todas nuestras novedades? <br>(tranca, no nos gusta el Spam)</strong></div>
+                
+                <form name="contact" method="POST" data-netlify="true">
+                  <div class="form-group">
+                    <p>
+                      <label><input type="text" name="name" placeholder="Acá va tu nombre"/></label>
+                    </p>
+                  </div>
+                  <p>
+                    <label><input type="email" name="email" placeholder="Acá va tu e-mail" /></label>
+                  </p>
+                  <p>
+                    <button type="submit" class="btn btn-success mb-3">¡Quiero!</button>
+                  </p>
+                </form>
+                <!-- <form class="form" method="POST" role="form" data-netlify="true">
                       <div class="form-group">
                         <label class="sr-only" for="ejemplo_email_2">Email</label>
                         <input type="email" class="form-control" id="ejemplo_email_2"
                                placeholder="Acá va tu e-mail">
                       </div>
                       <div class="form-group">
-                        <label class="sr-only" for="">Contraseña</label>
-                        <input type="password" class="form-control" id="" 
+                        <label class="sr-only" for="">Nombre</label>
+                        <input type="text" class="form-control" id="" 
                                placeholder="Acá va tu nombre">
                       </div>
                         <button type="submit" class="btn btn-primary mb-3">¡Si, quiero!</button>
-                                      
-                    </form>
+                    </form> -->
             </div>     
                   <!-- form card -->
             
@@ -818,7 +831,7 @@
                   </ul>
                 <div class="card-footer text-muted text-justify text-center fw-lighter mt-3" id="txt_dev">
                   &copy;2021 PLAN! <br>
-                  Desarrollado con <i class="fa fa-heart" aria-hidden="true" ></i> por <a class="text-secondary text-decoration-none" href="https://www.sebasimarro.com"> Sebastián Simarro </a><!-- FIX HEIGHT -->
+                  Desarrollado con <i class="fa fa-heart" aria-hidden="true" ></i> por <a class="text-secondary text-decoration-none" href="https://www.sebasimarro.com"> Sebastián Simarro </a>
                 </div>
               
             </div>
