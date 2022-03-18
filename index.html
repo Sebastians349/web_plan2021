@@ -823,7 +823,7 @@
 
     <footer class="row justify-content-around shadow-lg p-3 bg-body rounded" id="footer">
 
-      <div class="card col-md-4 mb-4 align-items-center justify-content-center" style="width: 25rem;" id="pie_1">
+      <div class="card col-md-12 mb-4 align-items-center justify-content-center" id="pie_1">
         <div class="h5 text-center mt-4 mb-4 ml-4 mr-4">¿Querés recibir todas nuestras novedades? <br>(tranca, no nos
           gusta el Spam)</strong></div>
 
@@ -856,7 +856,7 @@
       </div>
       <!-- form card -->
 
-      <div class="col-auto col-xl-4 b-4 align-self-center" id="medios">
+      <div class="col-sm-6  b-4 align-self-center" id="medios">
         <div class="card mb-4">
           <div class="card-body">
             <h6 class="card-title text-center text-uppercase">Medios de pago / Envíos</h6>
@@ -864,14 +864,15 @@
               Aboná con todos los medios de pago y recibilo en donde estés. Si necesitás arreglar envíos particulares
               podés coordinar con nosotros. O retirarlo por nuestras oficinas.</p>
           </div>
+
           <img src="images/prueba.png" class=" ml-4 mr-4 mb-4 mt-4" alt="Logos métodos de pago y envios...">
 
         </div>
         <!-- <i><img class="mx-auto img-thumbnail mt-2" src="images/prueba.png" width="250" alt=""></i> -->
       </div>
 
-      <div class="col-auto" id="pie_2">
-        <div class="card" style="width: 25rem;">
+      <div class="col-md-6" id="pie_2">
+        <div class="card">
           <img src="images/logo-pistacho-800.png" width="70" class="card-img-fluid rounded align-self-center mt-4 mb-4"
             alt="logo color pistacho de Plan!">
           <div class="card-body text-center">
@@ -889,13 +890,18 @@
                   class="text-dark text-decoration-none ml-1" href="mailto:plansomos@gmail.com">plansomos@gmail.com</a>
               </li>
             </ul>
-            <div class="card-footer text-muted text-justify text-center fw-lighter mt-3" id="txt_dev">
-              &copy;2021 PLAN! <br>
-              Desarrollado con <i class="fa fa-heart" aria-hidden="true"></i> por <a
-                class="text-secondary text-decoration-none" href="https://www.sebasimarro.com"> Sebastián Simarro </a>
+            <div class="card-footer text-muted text-justify text-center fw-lighter " id="txt_dev">
             </div>
-
+            <code>codeado</code> con ❤️ por <a class="text-secondary text-decoration-none"
+              href="https://www.sebasimarro.com"> SS
+            </a>
+            <br>
+            <div>&copy;
+              <script>document.write(new Date().getFullYear());</script> PLAN!
+            </div>
           </div>
+
+        </div>
     </footer>
 
 
@@ -909,25 +915,7 @@
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/e6caaf1365.js"></script>
-  <script src="js/checkout.js"></script>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
-  <script>
-    // Agrega credenciales de SDK
-    const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
-    });
 
-    // Inicializa el checkout
-    mp.checkout({
-      preference: {
-        id: 'YOUR_PREFERENCE_ID'
-      },
-      render: {
-        container: '.cho-container', // Indica el nombre de la clase donde se mostrará el botón de pago
-        label: 'Pagar', // Cambia el texto del botón de pago (opcional)
-      }
-    });
-  </script>
 
 </body>
 
