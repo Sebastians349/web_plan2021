@@ -14,5 +14,6 @@ node_modules
 .sass-cache
 
 # the obvious
-code-workspace
+.code-workspace
+
 
